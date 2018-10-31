@@ -4,13 +4,13 @@ import sys
 
 
 def red():
-    return random.uniform(0.05, 3)
+    return random.choice([0.05, 0.2, 1, 3, 3, 3])
 
 def blue():
-    return random.uniform(0.95, 1.05)
+    return random.choice([0.95, 1, 1, 1, 1, 1.1])
 
 def green():
-    return random.uniform(0.8, 1.4)
+    return random.choice([0.8, 0.9, 1.1, 1.1, 1.2, 1.4])
 
 
 def emulate(r, g, b, steps=20):
